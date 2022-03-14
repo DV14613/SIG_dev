@@ -1,0 +1,1 @@
+Menu global | opcion1 | opcion2
