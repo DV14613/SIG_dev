@@ -1,0 +1,109 @@
+Link de acceso a pruebas
+http://localhost/Simec/SIG_dev/Login/login&usr=22
+
+
+
+//Lista de desarrollos
+07/04/2022
+Guardando formulario de documento en el ws - ok
+
+
+18/04/2022
+- crearDocumento
+    - Redireccionar despues de crear documento - ok
+    - Reemplazar localhost por ruta del servidor - ok
+- administrarDocumentos
+    - Crear Controlador - ok
+    - Crear vista - ok
+    - Listar documentos dependiendo del área - ok
+
+19/04/2022
+-administrarDocumentos
+    - Traer el nombre de los campos relacionados en lugar del ID - ok
+-crearDocumento
+    - Adicionar filtro a documentos word,excel, powertpoint y Pdf al upload del archivo - ok
+-infoCategoria
+    - Crear controlador y cargarlo - ok
+    - Crear vista cargada - ok
+    - Modificar - ok    
+    - Desactivar - ok
+
+20/04/2022
+-vistas basicas
+    - vista1: Mapa de Procesos - ok
+    - vista2: lista documentos por area - ok
+    - vista3: busquedaAvanzada
+    - vista4: resultado de la búsqueda - ok
+    - vista5: Dashboard - ok
+    - vista6: administrar Documentos - ok
+    - vista7: info Documento - ok
+    - vista8: administrar Categorias - ok
+    - vista9: info Categoria - ok
+
+- infoDocumento
+    - Modificacion de documento - ok
+
+21/04/2022
+- infoDocumento
+    - Al modificar el archivo, eliminar el file antiguo - ok
+    - Agregar cambiar estado al modificar el documento - ok
+
+26/04/2022
+- mapaProcesos
+    - buscarDocumento por nombre, descripcion y tag - ok
+    - listar resultados en vi_listaDocumentosEncontrados - ok
+
+
+27/04/2022
+- busquedaAvanzada
+    - busquedaAvanzadaDocumento por items seleccionados - ok
+    - listar resultados en vi_listaDocumentosEncontrados - ok
+
+03/05/2022
+- Integrar vistas
+    - Dashboard - ok
+    - gestionDocumentos - ok
+    - crearDocumento - ok
+    - administrarDocumentos - ok
+    - infoDocumento - ok
+    - mapaProcesos - ok
+    - buscarDocumento - ok
+    - busquedaAvanzada - ok
+    - listaDocumentosArea - ok
+    - gestionCategorias - ok
+    - crearCategoria - ok
+    - administrarCategorias - ok
+    - infoCategoria - ok
+
+05/05/2022   
+    - dashboard: Recuperar nomnbre de usuario - ok
+    - dashboard: Verificar permiso de administrar o Redireccionar - ok
+    - mapaProcesos: Ocultar boton cuando no sea administrar - ok
+
+
+06/05/2022 
+    - infoDocumento: Revisar error al reemplazar documento en infoDocumento  - ok
+    - infoCategoria: Revisar error al modificar categorias con tilde - ok
+    - infoDocumento: Actualizar creando metodo updateOne para el modelo de la clase documento - ok
+    - Ajustar los css generados desde Jquery en las vistas - ok
+
+11/05/2022
+    - busquedaAvanzada: Revisar funcionalidad, no trae varios documentos
+    - Revisar Todos los subtitulos
+    - crear seccion de tipos documentales - ok
+        - gestionTipoDocumento - ok
+        - crearTipoDocumento - ok
+        - administrarTipoDocumento
+        - infoTipoDocumento - ok
+
+12/05/2022
+    - ajustes dashboard y menu con Tipos de Documento -OK
+
+
+Proxima Version    
+    - busquedaAvanzada: Incluir buscador por rango de fecha del documento
+
+
+
+
+
