@@ -31,11 +31,17 @@ class DashboardController
 
     public function gestionCategorias()
     {
+        //DOC:2022-05-06: Verificacion de Administrador
+        Utils::adminAutorization();
+
         require_once 'views/layouts/categorias/vi_gestionCategorias.php';
     }
 
     public function crearCategoria()
     {
+        //DOC:2022-05-06: Verificacion de Administrador
+        Utils::adminAutorization();
+
         //DOC:2022-03-25: Carga la lísta de áreas activas
         $consulta = BASE_SERVER . "ws/Area/getAll";
         $data = file_get_contents($consulta);
@@ -47,6 +53,9 @@ class DashboardController
 
     public function infoCategoria()
     {
+        //DOC:2022-05-06: Verificacion de Administrador
+        Utils::adminAutorization();
+
         $idCategoria = isset($_POST['key']) ? $_POST['key'] : false;
         if ($idCategoria) {
             //DOC:2022-04-19:Data de la consulta
@@ -320,11 +329,17 @@ class DashboardController
 
     public function gestionTipoDocumento()
     {
+        //DOC:2022-05-06: Verificacion de Administrador
+        Utils::adminAutorization();
+
         require_once 'views/layouts/tipodocumento/vi_gestionTipoDocumento.php';
     }
 
     public function crearTipoDocumento()
     {
+        //DOC:2022-05-06: Verificacion de Administrador
+        Utils::adminAutorization();
+
         //DOC:2022-03-25: Carga la lísta de áreas activas
         $consulta = BASE_SERVER . "ws/Tipodocumento/getAll";
         $data = file_get_contents($consulta);
@@ -336,6 +351,9 @@ class DashboardController
 
     public function infoTipoDocumento()
     {
+        //DOC:2022-05-06: Verificacion de Administrador
+        Utils::adminAutorization();
+
         $idTipoDocumento = isset($_POST['key']) ? $_POST['key'] : false;
         if ($idTipoDocumento) {
             //DOC:2022-05-11:Data de la consulta
@@ -357,13 +375,12 @@ class DashboardController
         //DOC:2022-05-06: Verificacion de Administrador
         Utils::adminAutorization();
 
-
         $bufferContent = "";
 
         //DOC:2022-05-06: Carga la lísta de áreas activas
-        $consultaAuxiliar = BASE_SERVER . "ws/TipoDocumento/getAllFull";        
-        $dataAuxiliar = file_get_contents($consultaAuxiliar);        
-        $tuplaAuxiliar = json_decode($dataAuxiliar, true);        
+        $consultaAuxiliar = BASE_SERVER . "ws/TipoDocumento/getAllFull";
+        $dataAuxiliar = file_get_contents($consultaAuxiliar);
+        $tuplaAuxiliar = json_decode($dataAuxiliar, true);
         foreach ($tuplaAuxiliar as $registroAuxiliar) {
             $bufferContent .= '<tr>';
             $bufferContent .= '<td><button type="button" class="btn btn-dark" onclick="redirect(\'' . BASE_URL . 'Dashboard/infoTipoDocumento\',' . $registroAuxiliar['id'] . ')" title="Modificar"><i class="bi bi-gear-fill"></i></button></td></td>';
@@ -371,7 +388,7 @@ class DashboardController
             $bufferContent .= '<td>' . $registroAuxiliar['estado'] . '</td>';
             $bufferContent .= '</tr>';
         }
-        
+
         //DOC:2022-05-06: Carga la vista
         require_once 'views/layouts/tipodocumento/vi_administrarTipoDocumento.php';
     }
