@@ -29,7 +29,7 @@
           <div class="col-12 col-lg-4">
             <!-- Ver o editar TipoDocumento -->
             <a href="<?= BASE_URL . 'Dashboard/administrarTipoDocumento'; ?>">
-              <div class="card verde">
+              <div class="card rojo">
                 <div class="value">Administrar Tipo De Documentos</div>
               </div>
             </a>

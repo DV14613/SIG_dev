@@ -28,7 +28,7 @@
                     <div class="col-12 col-lg-4">
                         <!-- Administrar Documentos -->
                         <a href="<?= BASE_URL . 'Dashboard/administrarDocumentos'; ?>">
-                            <div class="card verde">
+                            <div class="card rojo">
                                 <div class="value">Administrar Documentos</div>
                             </div>
                         </a>

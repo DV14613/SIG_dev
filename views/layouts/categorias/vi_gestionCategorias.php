@@ -29,7 +29,7 @@
           <div class="col-12 col-lg-4">
             <!-- Ver o editar categorias -->
             <a href="<?= BASE_URL . 'Dashboard/administrarCategorias'; ?>">
-              <div class="card verde">
+              <div class="card rojo">
                 <div class="value">Administrar Categorias</div>
               </div>
             </a>

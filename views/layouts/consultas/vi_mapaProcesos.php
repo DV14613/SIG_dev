@@ -19,7 +19,9 @@
         <hr>
         <div class="fondotabla">
             <div class="row ">
-                <div class="col-12 col-md-1">Estrategico</div>
+                <div class="col-12  col-md-1 d-flex justify-content-end x">
+                    <div class="d-grid col-12 palabra_estrategico" ></div>
+                </div>
                 <div class="col-12 col-md-11">
                     <div class="row">
                         <div class="col-12 col-md-6 d-flex justify-content-end">
@@ -42,7 +44,9 @@
             </div>
             <hr>
             <div class="row ">
-                <div class="col-12 col-md-1">Misional</div>
+                <div class="col-12  col-md-1 d-flex justify-content-end ">
+                    <div class="d-grid col-12 palabra_misional" ></div>
+                </div>
                 <div class="col-12 col-md-11 ">
                     <div class="row">
                         <!--Misional-->
@@ -64,7 +68,9 @@
             </div>
             <hr>
             <div class="row">
-                <div class="col-12 col-md-1">Apoyo</div>
+                <div class="col-12  col-md-1 d-flex justify-content-end ">
+                    <div class="d-grid col-12 palabra_apoyo" ></div>
+                </div>
                 <div class="col-12 col-md-11 gap-3">
                     <div class="row ">
                         <div class="col-12  col-md-6 ">

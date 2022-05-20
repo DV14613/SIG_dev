@@ -49,7 +49,7 @@
                     </div>
                     <div class="col-md-6">
                         <label for="tags" class="form-label">Tags de Busqueda: </label>
-                        <textarea id="tags" name="tags" rows="3" class="form-control" required></textarea>
+                        <textarea id="tags" name="tags" rows="3" class="form-control" placeholder="Para agregar los tags de manera correcta digite una coma(,) luego de cada palabra. Ejemplo: palabra,texto,tags" required></textarea>
                     </div>
                     <div class="col-md-6">
                         <label for="descripcion" class="form-label">Descripción: </label>

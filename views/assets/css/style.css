@@ -7,8 +7,7 @@ body{
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 0;
-    
+    padding: 0; 
 }
 
 #titulo{
@@ -16,10 +15,7 @@ body{
     height: 120px;
     align-items: center;
     background-color: blue;
-    margin: 5;
-    
-    
-    
+    margin: 5;  
 }
 
 .titulo-h1{
@@ -39,9 +35,8 @@ a.icono-menu{
     margin: auto;
 }
 a.icono-menu:hover{
-    color:#e30713;
+    color:#990000;
 }
-
     .fondotabla{
     background-image: url("../img/fondo.png");
     background-size: 100%;
@@ -52,8 +47,6 @@ a.icono-menu:hover{
    .container a i{
     color: black;
     font-size: 30px;
-    
-
    }
 
    .container a{
@@ -61,54 +54,51 @@ a.icono-menu:hover{
     text-align: center;
     height: 50px;
     color:white;
-    
-   }
-
- 
-   .verde{
-    background: linear-gradient(220.64deg, #DDFFC2 0%, #A4FFC8 100%);
-   }
-   .verde:hover{
-    background: linear-gradient(60.64deg, #DDFFC2 0%, #A4FFC8 100%);
-   
    }
 
    .rojo{
-    background: linear-gradient(220.64deg, #FFD3B4 0%, #FFC8C8 100%);}
+    background: linear-gradient(90deg, rgba(79,79,79,1) 0%, rgba(129,129,129,1) 100%);
+  color: white;}
    .rojo:hover{
-    background: linear-gradient(60.64deg, #FFD3B4 0%, #FFC8C8 100%);
+    background: linear-gradient(90deg, rgba(153,0,0,1) 0%, rgba(194,1,1,1) 100%);
+    color: white;
    }
 
-   .azul{
-    background: linear-gradient(220.64deg, #DDFFC2 0%, #A4FFC8 100%);
-   }
-   .azul:hover{
-    background: linear-gradient(180deg, #ffffff 0%,  #ff7171 100%);
-   
-   }
+   .palabra_estrategico{
+    background-image: url("../img/estrategico.png");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    align-content:flex-end;
+    }
+   .palabra_misional{
+    background-image: url("../img/misional.png");
+    background-size:auto 100%;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    align-content:flex-end;
+    }
+   .palabra_apoyo{
+    background-image: url("../img/apoyo.png");
+    background-size:auto 100%;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    align-content:flex-end;
+    }
 
-
-
-   
    .container a:hover{
     color: black;
-}
+    }
    .container a.boton i{
     color:white;
     font-size: 15px;
-    
-
-   }
-
-   
-
+    }
    .container a.boton{
     text-decoration: none;
     text-align: center;
     height: 40px;
     color:white;
-    
-   }
+    }
 
    
 
@@ -158,7 +148,7 @@ a.icono-menu:hover{
 
   .nav__entry {
     width: 100%;
-    height: 64px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,6 +247,17 @@ a.icono-menu:hover{
 
   .button {
     margin-top: 32px;
+  }
+  .tipo_doc{ 
+    width: 100%;
+    background-image:url("../img/tipo_doc.png");
+    background-size: 70px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .tipo_doc:hover{
+    background-image:url("../img/tipo_doc_hover.png");
+    background-size: 70px auto;
   }
 
   .icon {
