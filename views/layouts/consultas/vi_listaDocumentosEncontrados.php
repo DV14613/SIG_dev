@@ -12,7 +12,7 @@
 
                 <div class="col-12 col-md-6 col-sm-8 d-flex justify-content-end ">
                     <a href="<?= BASE_URL . 'Dashboard/busquedaAvanzada'; ?>" class="boton"><button class="btn btn-dark " type="button"><i class="bi bi-zoom-in"></i> Busqueda Avanzada </button></a>
-                    <button type="button" class="btn btn-dark mx-3" onclick="document.location='<?= BASE_URL . 'Dashboard/mapaProcesos'; ?>'"><i class="bi bi-house-fill"></i></button>
+                    <a href="<?= BASE_URL . 'Dashboard/mapaProcesos'; ?>" class="boton mx-3"><button class="btn btn-dark " type="button"><i class="bi bi-house-fill"></i></button></a>
                 </div>
             </div>
 

@@ -15,21 +15,22 @@
         <div class="row">
             <div class="col-12  d-flex justify-content-center ">Lista de Documentos del Area</div>
             <div class="row">
-                <div class="col-12 col-md-6 col-sm-4  ">
-                    <p> <br>Seleccione un área:                        
-                        <select name="id_area" id="id_area">
+                <div class="col-12 col-md-6">
+                        <div class="input-group my-2">
+                        <label for="" class="form-label">Seleccione un área: </label>                            
+                        <select name="id_area" class="form-select" id="id_area">
                             <option value="">Seleccione Uno</option>
                             <?php foreach ($tuplaAreas as $registro) : ?>
                                 <option value="<?= $registro['id'] ?>" <?= $registro['id'] == $idArea ? 'selected="selected"' : ''  ?>><?= $registro['nombre'] ?></option>
                             <?php endforeach ?>
-                        </select>
-                    </p>
+                        </select> </div>
+                        
+                        
                 </div>
 
-                <div class="col-12 col-md-6 col-sm-8 d-flex justify-content-end ">
+                <div class="col-12 col-md-6  d-flex justify-content-end">
                     <a href="<?= BASE_URL . 'Dashboard/busquedaAvanzada'; ?>" class="boton"><button class="btn btn-dark " type="button"><i class="bi bi-zoom-in"></i> Busqueda Avanzada </button></a>
-                    <button type="button" class="btn btn-dark mx-3" onclick="document.location='<?= BASE_URL . 'Dashboard/mapaProcesos'; ?>'"><i class="bi bi-house-fill"></i></button>
-                
+                    <a href="<?= BASE_URL . 'Dashboard/mapaProcesos'; ?>" class="boton mx-3"><button class="btn btn-dark " type="button"><i class="bi bi-house-fill"></i></button></a>
                 </div>
             </div>
 
