@@ -5,7 +5,9 @@
         <h1 class="h1 text-center">SIG</h1>
         <div class="row">
             <div class="col-12 col-ms-6 d-flex justify-content-center">Ruta/Actual(Busqueda avanzada)</div>
-            <div class="col-12 col-ms-6 d-flex justify-content-end"> <a href="<?= BASE_URL . 'Dashboard/mapaProcesos'; ?>"><i class="bi bi-house-fill"></i></a>
+            <div class="col-12 col-ms-6 d-flex justify-content-end">
+            
+            <button type="button" class="btn btn-dark" onclick="document.location='<?= BASE_URL . 'Dashboard/mapaProcesos'; ?>'"><i class="bi bi-house-fill"></i></button>  
             </div>
         </div>
 

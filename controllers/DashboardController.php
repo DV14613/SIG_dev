@@ -392,4 +392,28 @@ class DashboardController
         //DOC:2022-05-06: Carga la vista
         require_once 'views/layouts/tipodocumento/vi_administrarTipoDocumento.php';
     }
+    //Creacion Vistas Plantillas
+    //10/08/2022
+    public function administrarPlantillas()
+    {
+        require_once 'views/layouts/plantillas/vi_administrarPlantillas.php';
+    }
+    public function crearPlantilla()
+    {
+        require_once 'views/layouts/plantillas/vi_crearPlantilla.php';
+    }
+    public function editarPlantilla()
+    {
+        require_once 'views/layouts/plantillas/vi_editarPlantillas.php';
+    }
+    public function historialPlantilla()
+    {
+        require_once 'views/layouts/plantillas/vi_historialPlantilla.php';
+    }
+    public function listaPlantilla()
+    {
+        require_once 'views/layouts/plantillas/vi_listaPlantillas.php';
+    }
+
+    
 }

@@ -26,6 +26,10 @@
           <a class="icono-menu tipo_doc" href="<?= BASE_URL . 'Dashboard/gestionTipoDocumento'; ?>" title="Gestión de Tipos Documentales"><img class="tipo_doc" src="" alt=""></a>
         </div>
         <div class="nav__entry nav__entry--active">
+           <!--Administrar Plantillas-->
+          <a class="icono-menu" href="<?= BASE_URL . 'Dashboard/administrarPlantillas'; ?>" title="Plantillas Autorizadas"><i class="bi bi-bookmark-check"></i></a>
+        </div>
+        <div class="nav__entry nav__entry--active">
           <!-- Cerrar Sesion -->
           <a class="icono-menu" href="<?= BASE_URL . 'Dashboard/dashboard'; ?>" title="Cerrar Sesión"><i class="bi bi-box-arrow-left"></i></a>
         </div>

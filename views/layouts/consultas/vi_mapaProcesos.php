@@ -12,10 +12,27 @@
             </div>
             <div class="col-auto ">
                 <button type="submit" class="btn btn-dark mb-3">Buscar</button>                
-                <a style="<?= $btnAdmin ?>" href="<?= BASE_URL . 'Dashboard/dashboard'; ?>"><i class="bi bi-house-fill"></i></a>                
+                <button type="button" class="btn btn-dark mb-3" style="<?= $btnAdmin ?>" onclick="document.location='<?= BASE_URL . 'Dashboard/dashboard'; ?>'"><i class="bi bi-house-fill"></i></button>      
             </div>
         </form>
 
+        <hr>
+        <div class="row ">
+        <div class="col-12 col-md-11">
+                    <div class="row">
+                        <div class="col-12 col-md-4 ">
+                            <div class="d-grid col-12 col-md-12 my-1"><a class="boton-2" href="#" onclick="" >SIMEC <i class="bi bi-box-arrow-left" style="font-size:20px; color:white"></i></a></div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="col-12 col-md-12 d-grid gap-2 my-1"><a class="boton-2" href="#" onclick="document.location='<?= BASE_URL . 'Dashboard/listaPlantilla'; ?>'">DESCARGAR<br> PLANTILLAS</a></div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="col-12 col-md-12 d-grid gap-2 my-1"><a class="boton-2" href="#" onclick="">...</a></div>
+                        </div>
+                    </div>
+
+                  
+        </div>
         <hr>
         <div class="fondotabla">
             <div class="row ">
